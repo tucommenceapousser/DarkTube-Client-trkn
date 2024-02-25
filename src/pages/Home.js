@@ -41,6 +41,8 @@ export default function Home() {
       navigate("/");
     } else if (newValue === 1) {
       navigate("/history");
+    } else if (newValue === 2) {
+      navigate("/trkn");
     }
   };
 
