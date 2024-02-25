@@ -1,0 +1,12 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: DarkTube-Client
+    src: ./
+    engine: react
+    primary: true
+    public_routes:
+    - "/*"
+    commands:
+      - npm run build
+    serve: build

@@ -9,6 +9,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import YouTube from '@mui/icons-material/YouTube';
 import HomeIcon from '@mui/icons-material/Home';
+import TrknIcon from '@mui/icons-material/BugReportOutlined';
 import Settings from '@mui/icons-material/History';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -24,6 +25,7 @@ import Grid from '@mui/material/Grid';
 import Divider from '@mui/material/Divider';
 import Avatar from '@mui/material/Avatar';
 import TextField from '@mui/material/TextField';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 export default function Home() {
   const navigate = useNavigate();
@@ -53,7 +55,7 @@ export default function Home() {
 
 
   React.useEffect(() => {
-    document.title = 'DarkTube - Free YouTube Downloader';
+    document.title = 'DarkTube - Free YouTube Downloader by TRHACKNON';
   }, []);
 
   const saveUrl = async (url, title) => {
@@ -78,7 +80,7 @@ export default function Home() {
     }
 
     try {
-      const response = await axios.post('https://darktube2.onrender.com/api', { url }, {
+      const response = await axios.post('https://dark-tube-trkn.replit.app/api', { url }, {
         headers: {
           'Content-Type': 'application/json',
         },
@@ -168,9 +170,12 @@ export default function Home() {
         <Box>
           <Grid container spacing={2}>
             <Grid item xs={12}>
-              <Typography variant="h4" align="center">
-                DarkTube
+              <Typography variant="h4" align="center" class="rainbow-text">
+<center>DarkTube by TRHACKNON</center>
               </Typography>
+              <div style={{ textAlign: 'center' }}>
+                <img id="logo" src="https://dark-client-trkn.replit.app/trkn.jpg" alt="trkn" />
+              </div>
               <Typography variant="subtitle1" align="center">
                 Enter the URL of the YouTube video you want to download
               </Typography>
@@ -183,6 +188,9 @@ export default function Home() {
                   label="YouTube URL"
                   value={url}
                   onChange={(e) => setUrl(e.target.value)}
+                  InputLabelProps={{
+                    style: { color: 'red' },
+                  }}
                 />
                 <Box sx={{ marginTop: 2 }}>
                   <Button
@@ -359,7 +367,8 @@ export default function Home() {
         >
           <BottomNavigationAction label="Home" icon={<HomeIcon />} />
           <BottomNavigationAction label="History" icon={<Settings />} />
-        </BottomNavigation>
+        <BottomNavigationAction label="Trkn" icon={<TrknIcon />} component={Link} to="/trkn" />
+          </BottomNavigation>
       </Box>
     </>
   );

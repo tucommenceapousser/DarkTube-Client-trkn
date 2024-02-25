@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
@@ -8,6 +10,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import YouTube from '@mui/icons-material/YouTube';
 import HomeIcon from '@mui/icons-material/Home';
+import TrknIcon from '@mui/icons-material/BugReportOutlined';
 import Settings from '@mui/icons-material/History';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -29,11 +32,13 @@ export default function List() {
     const [open, setOpen] = React.useState(false);
 
     const handleNavigation = (newValue) => {
-        if (newValue === 0) {
-            navigate("/");
-        } else if (newValue === 1) {
-            navigate("/history");
-        }
+      if (newValue === 0) {
+        navigate("/");
+      } else if (newValue === 1) {
+        navigate("/history");
+      } else if (newValue === 2) {
+        navigate("/trkn");
+      }
     };
 
     React.useEffect(() => {
@@ -172,8 +177,8 @@ export default function List() {
                 >
                     <BottomNavigationAction label="Home" icon={<HomeIcon />} />
                     <BottomNavigationAction label="History" icon={<Settings />} />
-                </BottomNavigation>
-            </Box>
+                <BottomNavigationAction label="Trkn" icon={<TrknIcon />} component={Link} to="/trkn" />
+                  </BottomNavigation>            </Box>
             <Dialog
                 open={open}
                 onClose={handleClose}
