@@ -75,7 +75,7 @@ npm install
 
 4. Replace API address:
 
-The backend address is located in the path `src/Home.js`. In line 81, replace `https://dark-tube-trknb.replit.app/` with your backend address. Get the backend source from: [DarkTube-Server](https://github.com/tucommenceapousser/DarkTube-Server)
+The backend address is located in the path `src/Home.js`. In line 81, replace `https://rune-telling-curve.glitch.me` with your backend address. Get the backend source from: [DarkTube-Server](https://github.com/tucommenceapousser/DarkTube-Server)
 
 ## Available Scripts
 
