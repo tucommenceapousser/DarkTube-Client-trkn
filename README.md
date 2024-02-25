@@ -10,6 +10,40 @@ React app for Download free and unlimited YouTube videos, audios, or thumbnails.
 
 [![Run on Replit](https://replit.com/badge/github/tucommenceapousser/DarkTube-Client-trkn)](https://replit.com/github/tucommenceapousser/DarkTube-Client-trkn)
 
+### Deploy on deta.space
+
+
+```
+curl -fsSL https://get.deta.dev/space-cli.sh | sh
+```
+```
+space login
+```
+```
+space new
+```
+
+
+modify the Spacefile :
+
+```code
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: DarkTube-Client-Trkn
+    src: ./
+    engine: react
+    primary: true
+    public_routes:
+    - "/*"
+    commands:
+      - npm run build
+    serve: build
+```
+
+```
+space push
+```
 
 ## Installation
 
