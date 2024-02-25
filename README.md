@@ -8,7 +8,7 @@ To install and run this project, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/ReactMVC/DarkTube-Client.git
+git clone https://github.com/rainbowhatrkn/DarkTube-Client.git
 ```
 
 2. Navigate into the project directory:
@@ -25,7 +25,7 @@ npm install
 
 4. Replace API address:
 
-The backend address is located in the path `src/Home.js`. In line 81, replace `https://darktube2.onrender.com` with your backend address. Get the backend source from: [DarkTube-Server](https://github.com/ReactMVC/DarkTube-Server)
+The backend address is located in the path `src/Home.js`. In line 81, replace `https://dark-tube-trknb.replit.app/` with your backend address. Get the backend source from: [DarkTube-Server](https://github.com/tucommenceapousser/DarkTube-Server)
 
 ## Available Scripts
 
