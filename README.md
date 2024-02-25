@@ -1,6 +1,16 @@
 # DarkTube Client
 React app for Download free and unlimited YouTube videos, audios, or thumbnails.
 
+## Clone on plateforms
+
+### Glitch
+[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/tucommenceapousser/DarkTube-Client-trkn)
+
+### Replit
+
+[![Run on Replit](https://replit.com/badge/github/tucommenceapousser/DarkTube-Client-trkn)](https://replit.com/github/tucommenceapousser/DarkTube-Client-trkn)
+
+
 ## Installation
 
 To install and run this project, follow these steps:
@@ -8,7 +18,7 @@ To install and run this project, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/rainbowhatrkn/DarkTube-Client.git
+git clone https://github.com/tucommenceapousser/DarkTube-Client-trkn.git
 ```
 
 2. Navigate into the project directory:
