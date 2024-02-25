@@ -82,7 +82,7 @@ export default function Home() {
     }
 
     try {
-      const response = await axios.post('https://dark-tube-trknb.replit.app/api', { url }, {
+      const response = await axios.post('https://dark-tube-trkn.replit.app/api', { url }, {
         headers: {
           'Content-Type': 'application/json',
         },
